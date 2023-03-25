@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bookings</title>
+</head>
+<body>
+	<h1>Bookings</h1>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Booking ID</th>
+				<th>Customer Name</th>
+				<th>Motorbike Model</th>
+				<th>Start Date</th>
+				<th>End Date</th>
+				<th>Total Price</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>John Doe</td>
+				<td>Honda CB500X</td>
+				<td>2023-04-01</td>
+				<td>2023-04-08</td>
+				<td>$350</td>
+				<td>
+					<a href="edit_booking.php?id=1">Edit</a> | 
+					<a href="delete_booking.php?id=1">Delete</a>
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Jane Smith</td>
+				<td>Kawasaki Ninja 400</td>
+				<td>2023-05-15</td>
+				<td>2023-05-22</td>
+				<td>$280</td>
+				<td>
+					<a href="edit_booking.php?id=2">Edit</a> | 
+					<a href="delete_booking.php?id=2">Delete</a>
+				</td>
+			</tr>
+			<!-- Add more rows for each booking -->
+		</tbody>
+	</table>
+
+	<a href="add_booking.php">Add Booking</a>
+</body>
+</html>

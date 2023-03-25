@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cart - Motorbike Management System</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<?php include 'header.php'; ?>
+	
+	<div class="content">
+		<h1>Your Cart</h1>
+		
+		<?php
+			// Check if the cart is empty
+			if(empty($_SESSION['cart'])) {
+				echo '<p>Your cart is currently empty.</p>';
+			} else {
+				// Display the items in the cart
+				$total = 0;
+				echo '<table>';
+				echo '<tr><th>Name</th><th>Price</th><th>Quantity</th><th>Total</th></tr>';
+				foreach($_SESSION['cart'] as $item) {
+					echo '<tr>';
+					echo '<td>' . $item['name'] . '</td>';
+					echo '<td>$' . number_format($item['price'], 2) . '</td>';
+					echo '<td>' . $item['quantity'] . '</td>';
+					echo '<td>$' . number_format($item['price'] * $item['quantity'], 2) . '</td>';
+					echo '</tr>';
+					
+					$total += $item['price'] * $item['quantity'];
+				}
+				echo '<tr><th colspan="3">Total</th><td>$' . number_format($total, 2) . '</td></tr>';
+				echo '</table>';
+			}
+		?>
+		
+		<p><a href="shop.php">Continue Shopping</a></p>
+		<?php if(!empty($_SESSION['cart'])) { ?>
+		<p><a href="checkout.php">Proceed to Checkout</a></p>
+		<?php } ?>
+	</div>
+	
+	<?php include 'footer.php'; ?>
+</body>
+</html>

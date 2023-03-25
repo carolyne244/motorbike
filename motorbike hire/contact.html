@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us - Motorbikes</title>
+    <style>
+      /* Style the header */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+      }
+      /* Style the navigation menu */
+      nav {
+        display: inline-block;
+      }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  /* Style the form */
+  form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8c9eb4;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  button[type=submit] {
+    background-color: #6f5a5a;
+    color: #7667b5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type=submit]:hover {
+    background-color: aquamarine; -color: #1e1717;
+}
+
+/* Style the footer */
+footer {
+background-color: #7c0af6;
+color: #fefcff;
+padding: 20px;
+text-align: center;
+margin-top: 20px;
+}
+
+  </style>
+  </head>
+  <body>
+    <header>
+      <h1>Motorbikes</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="about.html">About</a></li>
+         
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p>Motorbikes &copy; 2023</p>
+    </footer>
+  </body>
+</html>
+
+
+
+

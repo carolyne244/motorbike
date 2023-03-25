@@ -1,0 +1,50 @@
+.motorbike-details {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px;
+	padding: 20px;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.motorbike-img img {
+	max-width: 400px;
+	height: auto;
+}
+
+.motorbike-info {
+	flex: 1;
+	margin-left: 20px;
+}
+
+.motorbike-info h2 {
+	margin-bottom: 10px;
+}
+
+.motorbike-info p {
+	margin: 5px 0;
+	font-size: 18px;
+}
+
+.availability {
+	color: green;
+	font-weight: bold;
+}
+
+.hire-btn {
+	margin-top: 10px;
+	padding: 10px 20px;
+	font-size: 18px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.hire-btn:hover {
+	background-color: #3e8e41;
+}
